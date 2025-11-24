@@ -1,0 +1,90 @@
+version: 2
+
+models:
+  - name: raw_stocks_data
+    description: "Base view over the raw stock price data loaded from Lab 1."
+    columns:
+      - name: SYMBOL
+        description: "Stock ticker symbol (e.g., AAPL, NVDA)."
+        tests:
+          - not_null
+      - name: DATE
+        description: "Trading date for the stock price."
+        tests:
+          - not_null
+      - name: OPEN
+        description: "Opening price of the stock on the given trading date."
+      - name: HIGH
+        description: "Highest traded price of the stock on the given trading date."
+      - name: LOW
+        description: "Lowest traded price of the stock on the given trading date."
+      - name: CLOSE
+        description: "Closing price of the stock on the given trading date."
+      - name: VOLUME
+        description: "Number of shares traded on the given trading date."
+
+  - name: moving_avg
+    description: "Analytics table with 14-day and 50-day moving averages of closing prices for each stock."
+    columns:
+      - name: SYMBOL
+        description: "Stock ticker symbol."
+        tests:
+          - not_null
+      - name: DATE
+        description: "Trading date."
+        tests:
+          - not_null
+      - name: CLOSE
+        description: "Rounded closing price for the given date."
+      - name: MOVING_AVG_14D
+        description: "14-day moving average of the closing price."
+      - name: MOVING_AVG_50D
+        description: "50-day moving average of the closing price."
+
+  - name: price_momentum
+    description: "Analytics table that captures 5-day price momentum (absolute price change over 5 trading days)."
+    columns:
+      - name: SYMBOL
+        description: "Stock ticker symbol."
+        tests:
+          - not_null
+      - name: DATE
+        description: "Trading date."
+        tests:
+          - not_null
+      - name: CLOSE
+        description: "Rounded closing price for the given date."
+      - name: CLOSE_5_DAYS_AGO
+        description: "Closing price 5 trading days prior."
+      - name: PRICE_MOMENTUM
+        description: "Difference between current close and close 5 days ago."
+
+  - name: rsi
+    description: "Analytics table computing 14-day and 50-day Relative Strength Index (RSI) for each stock."
+    columns:
+      - name: SYMBOL
+        description: "Stock ticker symbol."
+        tests:
+          - not_null
+      - name: DATE
+        description: "Trading date."
+        tests:
+          - not_null
+      - name: RSI_14D
+        description: "14-day RSI value based on average gains and losses."
+      - name: RSI_50D
+        description: "50-day RSI value based on average gains and losses."
+
+  - name: volatility
+    description: "Analytics table with 10-day rolling volatility based on daily returns."
+    columns:
+      - name: SYMBOL
+        description: "Stock ticker symbol."
+        tests:
+          - not_null
+      - name: DATE
+        description: "Trading date."
+        tests:
+          - not_null
+      - name: VOLATILITY_10D
+        description: "10-day rolling standard deviation of daily returns (sample standard deviation)."

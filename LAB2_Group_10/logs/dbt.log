@@ -1,0 +1,1299 @@
+[0m00:42:36.822870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774be4fded50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774be42a2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774be4fdd880>]}
+
+
+============================== 00:42:36.837580 | 576e6d4d-e67c-4a22-9df5-c23a6be6fcec ==============================
+[0m00:42:36.837580 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:42:36.839305 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/LAB2_Group_10', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/LAB2_Group_10/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/LAB2_Group_10 --project-dir /opt/airflow/LAB2_Group_10', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:42:36.864759 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_ROLE'
+[0m00:42:36.866653 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.19251342, "process_user_time": 3.194353, "process_kernel_time": 0.878447, "process_mem_max_rss": "196616", "process_in_blocks": "16", "process_out_blocks": "16", "command_success": false}
+[0m00:42:36.867755 [debug] [MainThread]: Command `dbt run` failed at 00:42:36.867576 after 0.19 seconds
+[0m00:42:36.868591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774be42a2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774be3d0b7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774be40ae180>]}
+[0m00:42:36.869487 [debug] [MainThread]: Flushing usage events
+[0m00:59:52.960025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea3557a8530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea35709cd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea3560bbcb0>]}
+
+
+============================== 00:59:52.975026 | d82b1690-df2e-4751-bef5-5c82157b5678 ==============================
+[0m00:59:52.975026 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:59:52.977111 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/LAB2_Group_10', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/opt/airflow/LAB2_Group_10/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/LAB2_Group_10 --project-dir /opt/airflow/LAB2_Group_10', 'send_anonymous_usage_stats': 'True'}
+[0m00:59:54.957389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd82b1690-df2e-4751-bef5-5c82157b5678', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea3336acf50>]}
+[0m00:59:55.034331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd82b1690-df2e-4751-bef5-5c82157b5678', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea339d63230>]}
+[0m00:59:55.035877 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m00:59:55.312452 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:59:55.318275 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:59:55.320125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd82b1690-df2e-4751-bef5-5c82157b5678', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea33f9ab8c0>]}
+[0m00:59:58.002801 [error] [MainThread]: Encountered an error:
+Compilation Error in snapshot stock_snapshot (snapshots/stock_snapshot.sql)
+  invalid syntax for function call expression
+    line 4
+      config(
+[0m00:59:58.005193 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.1786866, "process_user_time": 9.990225, "process_kernel_time": 1.806963, "process_mem_max_rss": "204696", "process_in_blocks": "88", "command_success": false, "process_out_blocks": "0"}
+[0m00:59:58.006774 [debug] [MainThread]: Command `dbt run` failed at 00:59:58.006547 after 5.18 seconds
+[0m00:59:58.007734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea358e9bb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea333453140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea3334f5fa0>]}
+[0m00:59:58.008571 [debug] [MainThread]: Flushing usage events
+[0m01:07:06.504635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b6ee042c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b6f0291f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b6ee04ad0>]}
+
+
+============================== 01:07:06.525168 | df90ed1e-d269-470d-9da2-292d75554703 ==============================
+[0m01:07:06.525168 [info ] [MainThread]: Running with dbt=1.8.7
+[0m01:07:06.526893 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/LAB2_Group_10', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/LAB2_Group_10/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/LAB2_Group_10 --project-dir /opt/airflow/LAB2_Group_10', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:07:08.349869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b6fb134a0>]}
+[0m01:07:08.445656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b509ebb90>]}
+[0m01:07:08.447263 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m01:07:08.710555 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m01:07:08.716242 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:07:08.717812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b50cae5d0>]}
+[0m01:07:11.119036 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m01:07:11.120444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b503dbb90>]}
+[0m01:07:11.648594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b50f9b4a0>]}
+[0m01:07:11.967643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b501451c0>]}
+[0m01:07:11.969453 [info ] [MainThread]: Found 5 models, 1 snapshot, 10 data tests, 459 macros
+[0m01:07:11.970508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b6f66cb60>]}
+[0m01:07:11.974170 [info ] [MainThread]: 
+[0m01:07:11.975742 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:07:11.986167 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_MARMOT'
+[0m01:07:12.009963 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT"
+[0m01:07:12.011009 [debug] [ThreadPool]: On list_USER_DB_MARMOT: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT"} */
+show terse schemas in database USER_DB_MARMOT
+    limit 10000
+[0m01:07:12.012139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:07:12.670241 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.658 seconds
+[0m01:07:12.673444 [debug] [ThreadPool]: On list_USER_DB_MARMOT: Close
+[0m01:07:12.786800 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT, now list_USER_DB_MARMOT_analytics)
+[0m01:07:12.806825 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_analytics"
+[0m01:07:12.807745 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_analytics"} */
+show objects in USER_DB_MARMOT.analytics limit 10000
+[0m01:07:12.808525 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:07:13.270445 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.462 seconds
+[0m01:07:13.275335 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: Close
+[0m01:07:13.385452 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_analytics, now list_USER_DB_MARMOT_snapshots)
+[0m01:07:13.396616 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_snapshots"
+[0m01:07:13.397999 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_snapshots"} */
+show objects in USER_DB_MARMOT.snapshots limit 10000
+[0m01:07:13.399376 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:07:13.834198 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c09843-0307-1dc5-000f-c0df008fa1ae
+[0m01:07:13.835545 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m01:07:13.837178 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m01:07:13.838506 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m01:07:13.839571 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: Close
+[0m01:07:13.972353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b50077da0>]}
+[0m01:07:13.975456 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:07:13.977072 [info ] [MainThread]: 
+[0m01:07:14.002663 [debug] [Thread-1 (]: Began running node model.lab2_group_10.raw_stocks_data
+[0m01:07:14.004980 [info ] [Thread-1 (]: 1 of 5 START sql view model analytics.raw_stocks_data .......................... [RUN]
+[0m01:07:14.006940 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_snapshots, now model.lab2_group_10.raw_stocks_data)
+[0m01:07:14.009373 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.raw_stocks_data
+[0m01:07:14.061196 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.raw_stocks_data"
+[0m01:07:14.116119 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.raw_stocks_data
+[0m01:07:14.251267 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.raw_stocks_data"
+[0m01:07:14.287086 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.raw_stocks_data"
+[0m01:07:14.288847 [debug] [Thread-1 (]: On model.lab2_group_10.raw_stocks_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.raw_stocks_data"} */
+create or replace   view USER_DB_MARMOT.analytics.raw_stocks_data
+  
+   as (
+    -- models/raw_stocks_data.sql
+
+
+SELECT
+    SYMBOL,
+    DATE,
+    OPEN,
+    HIGH,
+    LOW,
+    CLOSE,
+    VOLUME
+FROM USER_DB_MARMOT.RAW.STOCKS_INFO_LAB_1;
+[0m01:07:14.293030 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:07:14.844638 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c09843-0307-1c18-000f-c0df008f42a6
+[0m01:07:14.847017 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 41 unexpected ';'.
+[0m01:07:14.849562 [debug] [Thread-1 (]: On model.lab2_group_10.raw_stocks_data: Close
+[0m01:07:14.984263 [debug] [Thread-1 (]: Database Error in model raw_stocks_data (models/raw_stocks_data.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 41 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/raw_stocks_data.sql
+[0m01:07:14.992826 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'df90ed1e-d269-470d-9da2-292d75554703', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b5050f4a0>]}
+[0m01:07:14.998061 [error] [Thread-1 (]: 1 of 5 ERROR creating sql view model analytics.raw_stocks_data ................. [[31mERROR[0m in 0.98s]
+[0m01:07:15.001707 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.raw_stocks_data
+[0m01:07:15.008073 [debug] [Thread-1 (]: Began running node model.lab2_group_10.moving_avg
+[0m01:07:15.015624 [info ] [Thread-1 (]: 2 of 5 SKIP relation analytics.moving_avg ...................................... [[33mSKIP[0m]
+[0m01:07:15.018354 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.moving_avg
+[0m01:07:15.020741 [debug] [Thread-1 (]: Began running node model.lab2_group_10.price_momentum
+[0m01:07:15.024808 [info ] [Thread-1 (]: 3 of 5 SKIP relation analytics.price_momentum .................................. [[33mSKIP[0m]
+[0m01:07:15.032699 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.price_momentum
+[0m01:07:15.035356 [debug] [Thread-1 (]: Began running node model.lab2_group_10.rsi
+[0m01:07:15.037879 [info ] [Thread-1 (]: 4 of 5 SKIP relation analytics.rsi ............................................. [[33mSKIP[0m]
+[0m01:07:15.043027 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.rsi
+[0m01:07:15.046165 [debug] [Thread-1 (]: Began running node model.lab2_group_10.volatility
+[0m01:07:15.048429 [info ] [Thread-1 (]: 5 of 5 SKIP relation analytics.volatility ...................................... [[33mSKIP[0m]
+[0m01:07:15.052018 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.volatility
+[0m01:07:15.063413 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:07:15.068378 [debug] [MainThread]: Connection 'model.lab2_group_10.raw_stocks_data' was properly closed.
+[0m01:07:15.090513 [info ] [MainThread]: 
+[0m01:07:15.093396 [info ] [MainThread]: Finished running 1 view model, 4 table models in 0 hours 0 minutes and 3.11 seconds (3.11s).
+[0m01:07:15.098219 [debug] [MainThread]: Command end result
+[0m01:07:15.295479 [info ] [MainThread]: 
+[0m01:07:15.297915 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m01:07:15.300041 [info ] [MainThread]: 
+[0m01:07:15.306097 [error] [MainThread]:   Database Error in model raw_stocks_data (models/raw_stocks_data.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 41 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/raw_stocks_data.sql
+[0m01:07:15.308528 [info ] [MainThread]: 
+[0m01:07:15.310566 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=4 TOTAL=5
+[0m01:07:15.313542 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 8.924559, "process_user_time": 10.433406, "process_kernel_time": 1.600719, "process_mem_max_rss": "215516", "process_in_blocks": "40", "process_out_blocks": "8", "command_success": false}
+[0m01:07:15.316423 [debug] [MainThread]: Command `dbt run` failed at 01:07:15.315988 after 8.93 seconds
+[0m01:07:15.318407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b72466a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b5096ec00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5b527d9c10>]}
+[0m01:07:15.320086 [debug] [MainThread]: Flushing usage events
+[0m01:16:56.505994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d80dadcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d80dadee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d81a107a0>]}
+
+
+============================== 01:16:56.520000 | 9eb7aa8a-7745-47f4-b1dc-31e241cf1528 ==============================
+[0m01:16:56.520000 [info ] [MainThread]: Running with dbt=1.8.7
+[0m01:16:56.522220 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/opt/airflow/LAB2_Group_10', 'log_path': '/opt/airflow/LAB2_Group_10/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/LAB2_Group_10 --project-dir /opt/airflow/LAB2_Group_10', 'send_anonymous_usage_stats': 'True'}
+[0m01:16:58.706110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d81cfdaf0>]}
+[0m01:16:58.814473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5f14cb30>]}
+[0m01:16:58.816252 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m01:16:59.144960 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m01:16:59.634775 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m01:16:59.636491 [debug] [MainThread]: Partial parsing: updated file: lab2_group_10://models/raw_stocks_data.sql
+[0m01:17:00.113306 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m01:17:00.114892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5f14c620>]}
+[0m01:17:00.556365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5ea85d30>]}
+[0m01:17:00.879368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5ea61280>]}
+[0m01:17:00.881489 [info ] [MainThread]: Found 5 models, 1 snapshot, 10 data tests, 459 macros
+[0m01:17:00.883408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5ec49910>]}
+[0m01:17:00.887847 [info ] [MainThread]: 
+[0m01:17:00.890243 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:17:00.899181 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_MARMOT'
+[0m01:17:00.926437 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT"
+[0m01:17:00.927396 [debug] [ThreadPool]: On list_USER_DB_MARMOT: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT"} */
+show terse schemas in database USER_DB_MARMOT
+    limit 10000
+[0m01:17:00.928241 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:17:01.526511 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.598 seconds
+[0m01:17:01.531183 [debug] [ThreadPool]: On list_USER_DB_MARMOT: Close
+[0m01:17:01.646948 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT, now list_USER_DB_MARMOT_snapshots)
+[0m01:17:01.671290 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_snapshots"
+[0m01:17:01.673059 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_snapshots"} */
+show objects in USER_DB_MARMOT.snapshots limit 10000
+[0m01:17:01.674329 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:17:02.172477 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c0984d-0307-1cc8-000f-c0df008ebbc6
+[0m01:17:02.173441 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m01:17:02.174522 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m01:17:02.175238 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m01:17:02.176274 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: Close
+[0m01:17:02.292823 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_snapshots, now list_USER_DB_MARMOT_analytics)
+[0m01:17:02.297322 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_analytics"
+[0m01:17:02.298322 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_analytics"} */
+show objects in USER_DB_MARMOT.analytics limit 10000
+[0m01:17:02.299345 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:17:02.752244 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.453 seconds
+[0m01:17:02.756788 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: Close
+[0m01:17:02.897799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5ea61e80>]}
+[0m01:17:02.899567 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:17:02.901031 [info ] [MainThread]: 
+[0m01:17:02.914757 [debug] [Thread-1 (]: Began running node model.lab2_group_10.raw_stocks_data
+[0m01:17:02.916433 [info ] [Thread-1 (]: 1 of 5 START sql view model analytics.raw_stocks_data .......................... [RUN]
+[0m01:17:02.919746 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_analytics, now model.lab2_group_10.raw_stocks_data)
+[0m01:17:02.920723 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.raw_stocks_data
+[0m01:17:02.932988 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.raw_stocks_data"
+[0m01:17:02.957147 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.raw_stocks_data
+[0m01:17:03.010337 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.raw_stocks_data"
+[0m01:17:03.034232 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.raw_stocks_data"
+[0m01:17:03.035691 [debug] [Thread-1 (]: On model.lab2_group_10.raw_stocks_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.raw_stocks_data"} */
+create or replace   view USER_DB_MARMOT.analytics.raw_stocks_data
+  
+   as (
+    -- models/raw_stocks_data.sql
+
+
+SELECT
+    SYMBOL,
+    DATE,
+    OPEN,
+    HIGH,
+    LOW,
+    CLOSE,
+    VOLUME
+FROM USER_DB_MARMOT.RAW.STOCKS_INFO_LAB_1
+  );
+[0m01:17:03.037488 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:17:03.582375 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.545 seconds
+[0m01:17:03.619674 [debug] [Thread-1 (]: On model.lab2_group_10.raw_stocks_data: Close
+[0m01:17:03.739677 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5f10a2d0>]}
+[0m01:17:03.741705 [info ] [Thread-1 (]: 1 of 5 OK created sql view model analytics.raw_stocks_data ..................... [[32mSUCCESS 1[0m in 0.82s]
+[0m01:17:03.743509 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.raw_stocks_data
+[0m01:17:03.746424 [debug] [Thread-1 (]: Began running node model.lab2_group_10.moving_avg
+[0m01:17:03.749114 [info ] [Thread-1 (]: 2 of 5 START sql table model analytics.moving_avg .............................. [RUN]
+[0m01:17:03.750779 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.raw_stocks_data, now model.lab2_group_10.moving_avg)
+[0m01:17:03.752373 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.moving_avg
+[0m01:17:03.761862 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.moving_avg"
+[0m01:17:03.793184 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.moving_avg
+[0m01:17:03.849913 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.moving_avg"
+[0m01:17:03.873978 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.moving_avg"
+[0m01:17:03.875894 [debug] [Thread-1 (]: On model.lab2_group_10.moving_avg: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.moving_avg"} */
+create or replace transient table USER_DB_MARMOT.analytics.moving_avg
+         as
+        (-- models/stock_metrics/moving_avg.sql
+WITH base AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        ROW_NUMBER() OVER (PARTITION BY symbol ORDER BY date) AS row_num
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+),
+
+moving_avg_calc AS (
+    SELECT 
+        symbol,
+        date,
+        round(close, 2) AS close,
+        ROUND(AVG(close) OVER (PARTITION BY symbol ORDER BY row_num ROWS BETWEEN 13 PRECEDING AND CURRENT ROW), 2) AS moving_avg_14d,
+        ROUND(AVG(close) OVER (PARTITION BY symbol ORDER BY row_num ROWS BETWEEN 49 PRECEDING AND CURRENT ROW), 2) AS moving_avg_50d
+    FROM base
+)
+
+SELECT * FROM moving_avg_calc;
+[0m01:17:03.878569 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:17:04.306668 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c0984d-0307-1d9e-000f-c0df008ef7e6
+[0m01:17:04.308399 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 23 at position 29 unexpected ';'.
+[0m01:17:04.310113 [debug] [Thread-1 (]: On model.lab2_group_10.moving_avg: Close
+[0m01:17:04.461279 [debug] [Thread-1 (]: Database Error in model moving_avg (models/stock_metrics/moving_avg.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 29 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/moving_avg.sql
+[0m01:17:04.465210 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5cccb3e0>]}
+[0m01:17:04.468987 [error] [Thread-1 (]: 2 of 5 ERROR creating sql table model analytics.moving_avg ..................... [[31mERROR[0m in 0.71s]
+[0m01:17:04.473184 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.moving_avg
+[0m01:17:04.475143 [debug] [Thread-1 (]: Began running node model.lab2_group_10.price_momentum
+[0m01:17:04.483506 [info ] [Thread-1 (]: 3 of 5 START sql table model analytics.price_momentum .......................... [RUN]
+[0m01:17:04.488759 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.moving_avg, now model.lab2_group_10.price_momentum)
+[0m01:17:04.490660 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.price_momentum
+[0m01:17:04.506594 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.price_momentum"
+[0m01:17:04.557210 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.price_momentum
+[0m01:17:04.575718 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.price_momentum"
+[0m01:17:04.622710 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.price_momentum"
+[0m01:17:04.631065 [debug] [Thread-1 (]: On model.lab2_group_10.price_momentum: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.price_momentum"} */
+create or replace transient table USER_DB_MARMOT.analytics.price_momentum
+         as
+        (WITH base AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        LAG(close, 5) OVER (PARTITION BY symbol ORDER BY date) AS close_5_days_ago
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+)
+
+SELECT
+    symbol,
+    date,
+    round(close, 2) as close,
+    round(close_5_days_ago, 2) as close_5_days_ago,
+    round(close - close_5_days_ago, 2) AS price_momentum
+FROM base
+WHERE close_5_days_ago IS NOT NULL;
+[0m01:17:04.633792 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:17:05.097305 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c0984d-0307-1cc8-000f-c0df008ebbca
+[0m01:17:05.098495 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 19 at position 34 unexpected ';'.
+[0m01:17:05.099592 [debug] [Thread-1 (]: On model.lab2_group_10.price_momentum: Close
+[0m01:17:05.209693 [debug] [Thread-1 (]: Database Error in model price_momentum (models/stock_metrics/price_momentum.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 19 at position 34 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/price_momentum.sql
+[0m01:17:05.211486 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5cd53bc0>]}
+[0m01:17:05.214275 [error] [Thread-1 (]: 3 of 5 ERROR creating sql table model analytics.price_momentum ................. [[31mERROR[0m in 0.72s]
+[0m01:17:05.216262 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.price_momentum
+[0m01:17:05.218031 [debug] [Thread-1 (]: Began running node model.lab2_group_10.rsi
+[0m01:17:05.219281 [info ] [Thread-1 (]: 4 of 5 START sql table model analytics.rsi ..................................... [RUN]
+[0m01:17:05.220623 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.price_momentum, now model.lab2_group_10.rsi)
+[0m01:17:05.221991 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.rsi
+[0m01:17:05.230659 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.rsi"
+[0m01:17:05.247565 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.rsi
+[0m01:17:05.252701 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.rsi"
+[0m01:17:05.270115 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.rsi"
+[0m01:17:05.271734 [debug] [Thread-1 (]: On model.lab2_group_10.rsi: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.rsi"} */
+create or replace transient table USER_DB_MARMOT.analytics.rsi
+         as
+        (WITH base AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        LAG(close) OVER (PARTITION BY symbol ORDER BY date) AS prev_close
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+),
+
+gains_losses AS (
+    SELECT
+        symbol,
+        date,
+        CASE WHEN close - prev_close > 0 THEN close - prev_close ELSE 0 END AS gain,
+        CASE WHEN close - prev_close < 0 THEN ABS(close - prev_close) ELSE 0 END AS loss
+    FROM base
+    WHERE prev_close IS NOT NULL
+),
+
+rsi_calc AS (
+    SELECT
+        symbol,
+        date,
+        -- 14-day moving averages
+        AVG(gain) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 13 PRECEDING AND CURRENT ROW
+        ) AS avg_gain_14d,
+        AVG(loss) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 13 PRECEDING AND CURRENT ROW
+        ) AS avg_loss_14d,
+
+        -- 50-day moving averages
+        AVG(gain) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 49 PRECEDING AND CURRENT ROW
+        ) AS avg_gain_50d,
+        AVG(loss) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 49 PRECEDING AND CURRENT ROW
+        ) AS avg_loss_50d
+    FROM gains_losses
+)
+
+SELECT
+    symbol,
+    date,
+    ROUND(100 - (100 / (1 + (avg_gain_14d / NULLIF(avg_loss_14d, 0)))), 2) AS rsi_14d,
+    ROUND(100 - (100 / (1 + (avg_gain_50d / NULLIF(avg_loss_50d, 0)))), 2) AS rsi_50d
+FROM rsi_calc;
+[0m01:17:05.276698 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:17:05.752296 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c0984d-0307-1c18-000f-c0df008f42e2
+[0m01:17:05.754181 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 49 at position 13 unexpected ';'.
+[0m01:17:05.756418 [debug] [Thread-1 (]: On model.lab2_group_10.rsi: Close
+[0m01:17:05.936265 [debug] [Thread-1 (]: Database Error in model rsi (models/stock_metrics/rsi.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 49 at position 13 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/rsi.sql
+[0m01:17:05.939121 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5cd6f530>]}
+[0m01:17:05.941754 [error] [Thread-1 (]: 4 of 5 ERROR creating sql table model analytics.rsi ............................ [[31mERROR[0m in 0.72s]
+[0m01:17:05.945389 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.rsi
+[0m01:17:05.947354 [debug] [Thread-1 (]: Began running node model.lab2_group_10.volatility
+[0m01:17:05.949248 [info ] [Thread-1 (]: 5 of 5 START sql table model analytics.volatility .............................. [RUN]
+[0m01:17:05.951581 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.rsi, now model.lab2_group_10.volatility)
+[0m01:17:05.953916 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.volatility
+[0m01:17:05.963803 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.volatility"
+[0m01:17:05.980753 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.volatility
+[0m01:17:05.995414 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.volatility"
+[0m01:17:06.030536 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.volatility"
+[0m01:17:06.035674 [debug] [Thread-1 (]: On model.lab2_group_10.volatility: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.volatility"} */
+create or replace transient table USER_DB_MARMOT.analytics.volatility
+         as
+        (WITH returns AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        LAG(close) OVER (PARTITION BY symbol ORDER BY date) AS prev_close
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+),
+
+daily_returns AS (
+    SELECT 
+        symbol,
+        date,
+        (close - prev_close) / prev_close AS daily_return
+    FROM returns
+    WHERE prev_close IS NOT NULL
+)
+
+SELECT
+    symbol,
+    date,
+    round(STDDEV_SAMP(daily_return) OVER (
+        PARTITION BY symbol ORDER BY date ROWS BETWEEN 9 PRECEDING AND CURRENT ROW
+    ), 2) AS volatility_10d
+FROM daily_returns;
+[0m01:17:06.038906 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:17:06.487023 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c0984d-0307-1dc4-000f-c0df008fb226
+[0m01:17:06.488443 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 27 at position 18 unexpected ';'.
+[0m01:17:06.489521 [debug] [Thread-1 (]: On model.lab2_group_10.volatility: Close
+[0m01:17:06.636555 [debug] [Thread-1 (]: Database Error in model volatility (models/stock_metrics/volatility.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 27 at position 18 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/volatility.sql
+[0m01:17:06.637762 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9eb7aa8a-7745-47f4-b1dc-31e241cf1528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5cd14950>]}
+[0m01:17:06.639159 [error] [Thread-1 (]: 5 of 5 ERROR creating sql table model analytics.volatility ..................... [[31mERROR[0m in 0.69s]
+[0m01:17:06.641419 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.volatility
+[0m01:17:06.646003 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:17:06.647217 [debug] [MainThread]: Connection 'model.lab2_group_10.volatility' was properly closed.
+[0m01:17:06.648586 [info ] [MainThread]: 
+[0m01:17:06.650057 [info ] [MainThread]: Finished running 1 view model, 4 table models in 0 hours 0 minutes and 5.76 seconds (5.76s).
+[0m01:17:06.653001 [debug] [MainThread]: Command end result
+[0m01:17:06.791712 [info ] [MainThread]: 
+[0m01:17:06.793798 [info ] [MainThread]: [31mCompleted with 4 errors and 0 warnings:[0m
+[0m01:17:06.795104 [info ] [MainThread]: 
+[0m01:17:06.796829 [error] [MainThread]:   Database Error in model moving_avg (models/stock_metrics/moving_avg.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 29 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/moving_avg.sql
+[0m01:17:06.797878 [info ] [MainThread]: 
+[0m01:17:06.798865 [error] [MainThread]:   Database Error in model price_momentum (models/stock_metrics/price_momentum.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 19 at position 34 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/price_momentum.sql
+[0m01:17:06.799663 [info ] [MainThread]: 
+[0m01:17:06.800673 [error] [MainThread]:   Database Error in model rsi (models/stock_metrics/rsi.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 49 at position 13 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/rsi.sql
+[0m01:17:06.801753 [info ] [MainThread]: 
+[0m01:17:06.802592 [error] [MainThread]:   Database Error in model volatility (models/stock_metrics/volatility.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 27 at position 18 unexpected ';'.
+  compiled code at target/run/lab2_group_10/models/stock_metrics/volatility.sql
+[0m01:17:06.803322 [info ] [MainThread]: 
+[0m01:17:06.804267 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=4 SKIP=0 TOTAL=5
+[0m01:17:06.806725 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 10.498723, "process_user_time": 9.809336, "process_kernel_time": 1.773163, "process_mem_max_rss": "216620", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m01:17:06.808749 [debug] [MainThread]: Command `dbt run` failed at 01:17:06.808475 after 10.50 seconds
+[0m01:17:06.809911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d84bd6a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d5f0d56a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774d81568ec0>]}
+[0m01:17:06.811339 [debug] [MainThread]: Flushing usage events
+[0m01:21:57.137473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5cd304290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5ccdcf890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5ccdcf350>]}
+
+
+============================== 01:21:57.149423 | 78b8fdc5-32f3-41a7-835c-4a489d77e171 ==============================
+[0m01:21:57.149423 [info ] [MainThread]: Running with dbt=1.8.7
+[0m01:21:57.150571 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/opt/airflow/LAB2_Group_10', 'log_path': '/opt/airflow/LAB2_Group_10/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/LAB2_Group_10 --project-dir /opt/airflow/LAB2_Group_10', 'send_anonymous_usage_stats': 'True'}
+[0m01:21:58.856967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5b76b1460>]}
+[0m01:21:58.943679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5ab5e9130>]}
+[0m01:21:58.945334 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m01:21:59.163770 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m01:21:59.538008 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 4 files changed.
+[0m01:21:59.541073 [debug] [MainThread]: Partial parsing: updated file: lab2_group_10://models/stock_metrics/rsi.sql
+[0m01:21:59.542206 [debug] [MainThread]: Partial parsing: updated file: lab2_group_10://models/stock_metrics/price_momentum.sql
+[0m01:21:59.543155 [debug] [MainThread]: Partial parsing: updated file: lab2_group_10://models/stock_metrics/volatility.sql
+[0m01:21:59.544019 [debug] [MainThread]: Partial parsing: updated file: lab2_group_10://models/stock_metrics/moving_avg.sql
+[0m01:21:59.955311 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m01:21:59.956524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5ce5ab1a0>]}
+[0m01:22:00.270776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5ab065340>]}
+[0m01:22:00.530826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5aaf54d10>]}
+[0m01:22:00.533004 [info ] [MainThread]: Found 1 snapshot, 5 models, 10 data tests, 459 macros
+[0m01:22:00.535218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5a9e53a10>]}
+[0m01:22:00.545704 [info ] [MainThread]: 
+[0m01:22:00.549016 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:22:00.566794 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_MARMOT'
+[0m01:22:00.604700 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT"
+[0m01:22:00.605923 [debug] [ThreadPool]: On list_USER_DB_MARMOT: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT"} */
+show terse schemas in database USER_DB_MARMOT
+    limit 10000
+[0m01:22:00.607090 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:22:01.280911 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.674 seconds
+[0m01:22:01.283962 [debug] [ThreadPool]: On list_USER_DB_MARMOT: Close
+[0m01:22:01.417157 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT, now list_USER_DB_MARMOT_analytics)
+[0m01:22:01.437485 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_analytics"
+[0m01:22:01.438839 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_analytics"} */
+show objects in USER_DB_MARMOT.analytics limit 10000
+[0m01:22:01.439861 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:22:01.866889 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.427 seconds
+[0m01:22:01.871534 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: Close
+[0m01:22:01.999828 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_analytics, now list_USER_DB_MARMOT_snapshots)
+[0m01:22:02.007726 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_snapshots"
+[0m01:22:02.008863 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_snapshots"} */
+show objects in USER_DB_MARMOT.snapshots limit 10000
+[0m01:22:02.009832 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:22:02.502467 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c09852-0307-1dc4-000f-c0df008fb2c2
+[0m01:22:02.503728 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m01:22:02.505308 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m01:22:02.506509 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m01:22:02.507900 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: Close
+[0m01:22:02.641563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5a9c9c980>]}
+[0m01:22:02.643600 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:22:02.645049 [info ] [MainThread]: 
+[0m01:22:02.658898 [debug] [Thread-1 (]: Began running node model.lab2_group_10.raw_stocks_data
+[0m01:22:02.660979 [info ] [Thread-1 (]: 1 of 5 START sql view model analytics.raw_stocks_data .......................... [RUN]
+[0m01:22:02.662545 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_snapshots, now model.lab2_group_10.raw_stocks_data)
+[0m01:22:02.663566 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.raw_stocks_data
+[0m01:22:02.677659 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.raw_stocks_data"
+[0m01:22:02.691183 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.raw_stocks_data
+[0m01:22:02.745443 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.raw_stocks_data"
+[0m01:22:02.756941 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.raw_stocks_data"
+[0m01:22:02.758215 [debug] [Thread-1 (]: On model.lab2_group_10.raw_stocks_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.raw_stocks_data"} */
+create or replace   view USER_DB_MARMOT.analytics.raw_stocks_data
+  
+   as (
+    -- models/raw_stocks_data.sql
+
+
+SELECT
+    SYMBOL,
+    DATE,
+    OPEN,
+    HIGH,
+    LOW,
+    CLOSE,
+    VOLUME
+FROM USER_DB_MARMOT.RAW.STOCKS_INFO_LAB_1
+  );
+[0m01:22:02.760134 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:03.282796 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.523 seconds
+[0m01:22:03.320096 [debug] [Thread-1 (]: On model.lab2_group_10.raw_stocks_data: Close
+[0m01:22:03.422814 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5ab5a6180>]}
+[0m01:22:03.424284 [info ] [Thread-1 (]: 1 of 5 OK created sql view model analytics.raw_stocks_data ..................... [[32mSUCCESS 1[0m in 0.76s]
+[0m01:22:03.425895 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.raw_stocks_data
+[0m01:22:03.427590 [debug] [Thread-1 (]: Began running node model.lab2_group_10.moving_avg
+[0m01:22:03.428640 [info ] [Thread-1 (]: 2 of 5 START sql table model analytics.moving_avg .............................. [RUN]
+[0m01:22:03.429589 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.raw_stocks_data, now model.lab2_group_10.moving_avg)
+[0m01:22:03.430413 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.moving_avg
+[0m01:22:03.434365 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.moving_avg"
+[0m01:22:03.447336 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.moving_avg
+[0m01:22:03.482944 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.moving_avg"
+[0m01:22:03.500228 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.moving_avg"
+[0m01:22:03.501727 [debug] [Thread-1 (]: On model.lab2_group_10.moving_avg: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.moving_avg"} */
+create or replace transient table USER_DB_MARMOT.analytics.moving_avg
+         as
+        (-- models/stock_metrics/moving_avg.sql
+WITH base AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        ROW_NUMBER() OVER (PARTITION BY symbol ORDER BY date) AS row_num
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+),
+
+moving_avg_calc AS (
+    SELECT 
+        symbol,
+        date,
+        round(close, 2) AS close,
+        ROUND(AVG(close) OVER (PARTITION BY symbol ORDER BY row_num ROWS BETWEEN 13 PRECEDING AND CURRENT ROW), 2) AS moving_avg_14d,
+        ROUND(AVG(close) OVER (PARTITION BY symbol ORDER BY row_num ROWS BETWEEN 49 PRECEDING AND CURRENT ROW), 2) AS moving_avg_50d
+    FROM base
+)
+
+SELECT * FROM moving_avg_calc
+        );
+[0m01:22:03.503261 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:05.350704 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.847 seconds
+[0m01:22:05.355145 [debug] [Thread-1 (]: On model.lab2_group_10.moving_avg: Close
+[0m01:22:05.470027 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5a91c2e10>]}
+[0m01:22:05.472053 [info ] [Thread-1 (]: 2 of 5 OK created sql table model analytics.moving_avg ......................... [[32mSUCCESS 1[0m in 2.04s]
+[0m01:22:05.473702 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.moving_avg
+[0m01:22:05.474771 [debug] [Thread-1 (]: Began running node model.lab2_group_10.price_momentum
+[0m01:22:05.476465 [info ] [Thread-1 (]: 3 of 5 START sql table model analytics.price_momentum .......................... [RUN]
+[0m01:22:05.478148 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.moving_avg, now model.lab2_group_10.price_momentum)
+[0m01:22:05.479642 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.price_momentum
+[0m01:22:05.486794 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.price_momentum"
+[0m01:22:05.502778 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.price_momentum
+[0m01:22:05.512411 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.price_momentum"
+[0m01:22:05.530349 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.price_momentum"
+[0m01:22:05.532398 [debug] [Thread-1 (]: On model.lab2_group_10.price_momentum: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.price_momentum"} */
+create or replace transient table USER_DB_MARMOT.analytics.price_momentum
+         as
+        (WITH base AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        LAG(close, 5) OVER (PARTITION BY symbol ORDER BY date) AS close_5_days_ago
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+)
+
+SELECT
+    symbol,
+    date,
+    round(close, 2) as close,
+    round(close_5_days_ago, 2) as close_5_days_ago,
+    round(close - close_5_days_ago, 2) AS price_momentum
+FROM base
+WHERE close_5_days_ago IS NOT NULL
+        );
+[0m01:22:05.534687 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:06.717237 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.182 seconds
+[0m01:22:06.722183 [debug] [Thread-1 (]: On model.lab2_group_10.price_momentum: Close
+[0m01:22:06.873359 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5a91e9af0>]}
+[0m01:22:06.874765 [info ] [Thread-1 (]: 3 of 5 OK created sql table model analytics.price_momentum ..................... [[32mSUCCESS 1[0m in 1.40s]
+[0m01:22:06.876753 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.price_momentum
+[0m01:22:06.878133 [debug] [Thread-1 (]: Began running node model.lab2_group_10.rsi
+[0m01:22:06.879721 [info ] [Thread-1 (]: 4 of 5 START sql table model analytics.rsi ..................................... [RUN]
+[0m01:22:06.881703 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.price_momentum, now model.lab2_group_10.rsi)
+[0m01:22:06.882548 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.rsi
+[0m01:22:06.888322 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.rsi"
+[0m01:22:06.899174 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.rsi
+[0m01:22:06.905843 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.rsi"
+[0m01:22:06.924797 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.rsi"
+[0m01:22:06.926340 [debug] [Thread-1 (]: On model.lab2_group_10.rsi: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.rsi"} */
+create or replace transient table USER_DB_MARMOT.analytics.rsi
+         as
+        (WITH base AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        LAG(close) OVER (PARTITION BY symbol ORDER BY date) AS prev_close
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+),
+
+gains_losses AS (
+    SELECT
+        symbol,
+        date,
+        CASE WHEN close - prev_close > 0 THEN close - prev_close ELSE 0 END AS gain,
+        CASE WHEN close - prev_close < 0 THEN ABS(close - prev_close) ELSE 0 END AS loss
+    FROM base
+    WHERE prev_close IS NOT NULL
+),
+
+rsi_calc AS (
+    SELECT
+        symbol,
+        date,
+        -- 14-day moving averages
+        AVG(gain) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 13 PRECEDING AND CURRENT ROW
+        ) AS avg_gain_14d,
+        AVG(loss) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 13 PRECEDING AND CURRENT ROW
+        ) AS avg_loss_14d,
+
+        -- 50-day moving averages
+        AVG(gain) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 49 PRECEDING AND CURRENT ROW
+        ) AS avg_gain_50d,
+        AVG(loss) OVER (
+            PARTITION BY symbol ORDER BY date ROWS BETWEEN 49 PRECEDING AND CURRENT ROW
+        ) AS avg_loss_50d
+    FROM gains_losses
+)
+
+SELECT
+    symbol,
+    date,
+    ROUND(100 - (100 / (1 + (avg_gain_14d / NULLIF(avg_loss_14d, 0)))), 2) AS rsi_14d,
+    ROUND(100 - (100 / (1 + (avg_gain_50d / NULLIF(avg_loss_50d, 0)))), 2) AS rsi_50d
+FROM rsi_calc
+        );
+[0m01:22:06.928886 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:08.373062 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.445 seconds
+[0m01:22:08.376631 [debug] [Thread-1 (]: On model.lab2_group_10.rsi: Close
+[0m01:22:08.484824 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5a91ea6c0>]}
+[0m01:22:08.486651 [info ] [Thread-1 (]: 4 of 5 OK created sql table model analytics.rsi ................................ [[32mSUCCESS 1[0m in 1.60s]
+[0m01:22:08.488533 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.rsi
+[0m01:22:08.489906 [debug] [Thread-1 (]: Began running node model.lab2_group_10.volatility
+[0m01:22:08.491356 [info ] [Thread-1 (]: 5 of 5 START sql table model analytics.volatility .............................. [RUN]
+[0m01:22:08.492762 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.lab2_group_10.rsi, now model.lab2_group_10.volatility)
+[0m01:22:08.493960 [debug] [Thread-1 (]: Began compiling node model.lab2_group_10.volatility
+[0m01:22:08.503392 [debug] [Thread-1 (]: Writing injected SQL for node "model.lab2_group_10.volatility"
+[0m01:22:08.519136 [debug] [Thread-1 (]: Began executing node model.lab2_group_10.volatility
+[0m01:22:08.529679 [debug] [Thread-1 (]: Writing runtime sql for node "model.lab2_group_10.volatility"
+[0m01:22:08.548479 [debug] [Thread-1 (]: Using snowflake connection "model.lab2_group_10.volatility"
+[0m01:22:08.550973 [debug] [Thread-1 (]: On model.lab2_group_10.volatility: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "model.lab2_group_10.volatility"} */
+create or replace transient table USER_DB_MARMOT.analytics.volatility
+         as
+        (WITH returns AS (
+    SELECT 
+        symbol,
+        date,
+        close,
+        LAG(close) OVER (PARTITION BY symbol ORDER BY date) AS prev_close
+    FROM USER_DB_MARMOT.analytics.raw_stocks_data
+),
+
+daily_returns AS (
+    SELECT 
+        symbol,
+        date,
+        (close - prev_close) / prev_close AS daily_return
+    FROM returns
+    WHERE prev_close IS NOT NULL
+)
+
+SELECT
+    symbol,
+    date,
+    round(STDDEV_SAMP(daily_return) OVER (
+        PARTITION BY symbol ORDER BY date ROWS BETWEEN 9 PRECEDING AND CURRENT ROW
+    ), 2) AS volatility_10d
+FROM daily_returns
+        );
+[0m01:22:08.552842 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:09.711317 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.158 seconds
+[0m01:22:09.728921 [debug] [Thread-1 (]: On model.lab2_group_10.volatility: Close
+[0m01:22:09.991743 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '78b8fdc5-32f3-41a7-835c-4a489d77e171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5a92a0d70>]}
+[0m01:22:09.995460 [info ] [Thread-1 (]: 5 of 5 OK created sql table model analytics.volatility ......................... [[32mSUCCESS 1[0m in 1.50s]
+[0m01:22:10.000357 [debug] [Thread-1 (]: Finished running node model.lab2_group_10.volatility
+[0m01:22:10.016086 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:22:10.019049 [debug] [MainThread]: Connection 'model.lab2_group_10.volatility' was properly closed.
+[0m01:22:10.020714 [info ] [MainThread]: 
+[0m01:22:10.022574 [info ] [MainThread]: Finished running 1 view model, 4 table models in 0 hours 0 minutes and 9.47 seconds (9.47s).
+[0m01:22:10.035334 [debug] [MainThread]: Command end result
+[0m01:22:10.400730 [info ] [MainThread]: 
+[0m01:22:10.403489 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:22:10.405460 [info ] [MainThread]: 
+[0m01:22:10.406646 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m01:22:10.408528 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 13.369804, "process_user_time": 7.409024, "process_kernel_time": 1.613124, "process_mem_max_rss": "216612", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m01:22:10.410337 [debug] [MainThread]: Command `dbt run` succeeded at 01:22:10.410044 after 13.37 seconds
+[0m01:22:10.411409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5cfc436e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5d1082a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5b2bca1b0>]}
+[0m01:22:10.412282 [debug] [MainThread]: Flushing usage events
+[0m01:22:18.576843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf41854e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf418d73b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf418550a0>]}
+
+
+============================== 01:22:18.587198 | 78aa0492-842e-4ec9-b973-7450db18507c ==============================
+[0m01:22:18.587198 [info ] [MainThread]: Running with dbt=1.8.7
+[0m01:22:18.588940 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/LAB2_Group_10', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/LAB2_Group_10/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt test --profiles-dir /opt/airflow/LAB2_Group_10 --project-dir /opt/airflow/LAB2_Group_10', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:22:20.377740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78aa0492-842e-4ec9-b973-7450db18507c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf1fa19490>]}
+[0m01:22:20.454916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78aa0492-842e-4ec9-b973-7450db18507c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf257f1cd0>]}
+[0m01:22:20.457238 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m01:22:20.664966 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m01:22:21.061079 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:22:21.062096 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:22:21.176250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '78aa0492-842e-4ec9-b973-7450db18507c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf1fa78440>]}
+[0m01:22:21.425858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '78aa0492-842e-4ec9-b973-7450db18507c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf1f8530b0>]}
+[0m01:22:21.427363 [info ] [MainThread]: Found 1 snapshot, 5 models, 10 data tests, 459 macros
+[0m01:22:21.428736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78aa0492-842e-4ec9-b973-7450db18507c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf2439c2f0>]}
+[0m01:22:21.432599 [info ] [MainThread]: 
+[0m01:22:21.434087 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:22:21.443531 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_MARMOT_analytics'
+[0m01:22:21.470855 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_analytics"
+[0m01:22:21.471826 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_analytics"} */
+show objects in USER_DB_MARMOT.analytics limit 10000
+[0m01:22:21.472587 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:22:22.174890 [debug] [ThreadPool]: SQL status: SUCCESS 14 in 0.702 seconds
+[0m01:22:22.178950 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: Close
+[0m01:22:22.293161 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_analytics, now list_USER_DB_MARMOT_snapshots)
+[0m01:22:22.300224 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_snapshots"
+[0m01:22:22.302944 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_snapshots"} */
+show objects in USER_DB_MARMOT.snapshots limit 10000
+[0m01:22:22.304183 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:22:22.701724 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c09852-0307-1dc6-000f-c0df008fc2be
+[0m01:22:22.702671 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m01:22:22.703538 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m01:22:22.704291 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m01:22:22.705074 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: Close
+[0m01:22:22.830565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78aa0492-842e-4ec9-b973-7450db18507c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf1f8530b0>]}
+[0m01:22:22.831679 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:22:22.832329 [info ] [MainThread]: 
+[0m01:22:22.845880 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423
+[0m01:22:22.846939 [info ] [Thread-1 (]: 1 of 10 START test not_null_moving_avg_DATE .................................... [RUN]
+[0m01:22:22.847975 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_snapshots, now test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423)
+[0m01:22:22.848941 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423
+[0m01:22:22.873686 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423"
+[0m01:22:22.893982 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423
+[0m01:22:22.923408 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423"
+[0m01:22:22.945336 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423"
+[0m01:22:22.946625 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select DATE
+from USER_DB_MARMOT.analytics.moving_avg
+where DATE is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:22.947409 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:23.502376 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.555 seconds
+[0m01:22:23.518652 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423: Close
+[0m01:22:23.622371 [info ] [Thread-1 (]: 1 of 10 PASS not_null_moving_avg_DATE .......................................... [[32mPASS[0m in 0.77s]
+[0m01:22:23.624032 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423
+[0m01:22:23.625158 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb
+[0m01:22:23.626239 [info ] [Thread-1 (]: 2 of 10 START test not_null_moving_avg_SYMBOL .................................. [RUN]
+[0m01:22:23.627574 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_moving_avg_DATE.4d1f528423, now test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb)
+[0m01:22:23.628818 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb
+[0m01:22:23.636562 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb"
+[0m01:22:23.654444 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb
+[0m01:22:23.661439 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb"
+[0m01:22:23.677241 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb"
+[0m01:22:23.678678 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select SYMBOL
+from USER_DB_MARMOT.analytics.moving_avg
+where SYMBOL is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:23.679774 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:24.189193 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.512 seconds
+[0m01:22:24.192219 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb: Close
+[0m01:22:24.311575 [info ] [Thread-1 (]: 2 of 10 PASS not_null_moving_avg_SYMBOL ........................................ [[32mPASS[0m in 0.68s]
+[0m01:22:24.313566 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb
+[0m01:22:24.314540 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd
+[0m01:22:24.315405 [info ] [Thread-1 (]: 3 of 10 START test not_null_price_momentum_DATE ................................ [RUN]
+[0m01:22:24.316421 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_moving_avg_SYMBOL.b7075880fb, now test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd)
+[0m01:22:24.317249 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd
+[0m01:22:24.322660 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd"
+[0m01:22:24.341375 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd
+[0m01:22:24.347269 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd"
+[0m01:22:24.364494 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd"
+[0m01:22:24.365781 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select DATE
+from USER_DB_MARMOT.analytics.price_momentum
+where DATE is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:24.367140 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:24.919656 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.553 seconds
+[0m01:22:24.922498 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd: Close
+[0m01:22:25.080288 [info ] [Thread-1 (]: 3 of 10 PASS not_null_price_momentum_DATE ...................................... [[32mPASS[0m in 0.76s]
+[0m01:22:25.081819 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd
+[0m01:22:25.082812 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9
+[0m01:22:25.083810 [info ] [Thread-1 (]: 4 of 10 START test not_null_price_momentum_SYMBOL .............................. [RUN]
+[0m01:22:25.084929 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_price_momentum_DATE.e987c829dd, now test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9)
+[0m01:22:25.085890 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9
+[0m01:22:25.092757 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9"
+[0m01:22:25.105779 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9
+[0m01:22:25.111952 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9"
+[0m01:22:25.130309 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9"
+[0m01:22:25.133483 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select SYMBOL
+from USER_DB_MARMOT.analytics.price_momentum
+where SYMBOL is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:25.135100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:25.665799 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.531 seconds
+[0m01:22:25.669685 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9: Close
+[0m01:22:25.771808 [info ] [Thread-1 (]: 4 of 10 PASS not_null_price_momentum_SYMBOL .................................... [[32mPASS[0m in 0.69s]
+[0m01:22:25.773317 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9
+[0m01:22:25.774275 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1
+[0m01:22:25.775525 [info ] [Thread-1 (]: 5 of 10 START test not_null_raw_stocks_data_DATE ............................... [RUN]
+[0m01:22:25.777217 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_price_momentum_SYMBOL.49628c26e9, now test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1)
+[0m01:22:25.778248 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1
+[0m01:22:25.786658 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1"
+[0m01:22:25.798929 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1
+[0m01:22:25.806162 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1"
+[0m01:22:25.829583 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1"
+[0m01:22:25.831366 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select DATE
+from USER_DB_MARMOT.analytics.raw_stocks_data
+where DATE is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:25.833458 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:26.482394 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.649 seconds
+[0m01:22:26.485626 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1: Close
+[0m01:22:26.626743 [info ] [Thread-1 (]: 5 of 10 PASS not_null_raw_stocks_data_DATE ..................................... [[32mPASS[0m in 0.85s]
+[0m01:22:26.628255 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1
+[0m01:22:26.629190 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f
+[0m01:22:26.630044 [info ] [Thread-1 (]: 6 of 10 START test not_null_raw_stocks_data_SYMBOL ............................. [RUN]
+[0m01:22:26.631023 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_raw_stocks_data_DATE.be1781b4d1, now test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f)
+[0m01:22:26.631851 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f
+[0m01:22:26.637692 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f"
+[0m01:22:26.650680 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f
+[0m01:22:26.654737 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f"
+[0m01:22:26.670468 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f"
+[0m01:22:26.671698 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select SYMBOL
+from USER_DB_MARMOT.analytics.raw_stocks_data
+where SYMBOL is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:26.672667 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:27.038016 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.365 seconds
+[0m01:22:27.041664 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f: Close
+[0m01:22:27.146482 [info ] [Thread-1 (]: 6 of 10 PASS not_null_raw_stocks_data_SYMBOL ................................... [[32mPASS[0m in 0.51s]
+[0m01:22:27.148080 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f
+[0m01:22:27.149103 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_rsi_DATE.87d55c06b2
+[0m01:22:27.150142 [info ] [Thread-1 (]: 7 of 10 START test not_null_rsi_DATE ........................................... [RUN]
+[0m01:22:27.151322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_raw_stocks_data_SYMBOL.b95935e05f, now test.lab2_group_10.not_null_rsi_DATE.87d55c06b2)
+[0m01:22:27.152192 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_rsi_DATE.87d55c06b2
+[0m01:22:27.158709 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_rsi_DATE.87d55c06b2"
+[0m01:22:27.172475 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_rsi_DATE.87d55c06b2
+[0m01:22:27.177806 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_rsi_DATE.87d55c06b2"
+[0m01:22:27.194207 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_rsi_DATE.87d55c06b2"
+[0m01:22:27.195651 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_rsi_DATE.87d55c06b2: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_rsi_DATE.87d55c06b2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select DATE
+from USER_DB_MARMOT.analytics.rsi
+where DATE is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:27.196646 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:27.866116 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.669 seconds
+[0m01:22:27.870185 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_rsi_DATE.87d55c06b2: Close
+[0m01:22:28.011204 [info ] [Thread-1 (]: 7 of 10 PASS not_null_rsi_DATE ................................................. [[32mPASS[0m in 0.86s]
+[0m01:22:28.013049 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_rsi_DATE.87d55c06b2
+[0m01:22:28.014172 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9
+[0m01:22:28.015430 [info ] [Thread-1 (]: 8 of 10 START test not_null_rsi_SYMBOL ......................................... [RUN]
+[0m01:22:28.017286 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_rsi_DATE.87d55c06b2, now test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9)
+[0m01:22:28.018509 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9
+[0m01:22:28.029258 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9"
+[0m01:22:28.046381 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9
+[0m01:22:28.053036 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9"
+[0m01:22:28.069501 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9"
+[0m01:22:28.071910 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select SYMBOL
+from USER_DB_MARMOT.analytics.rsi
+where SYMBOL is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:28.073586 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:28.710907 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.637 seconds
+[0m01:22:28.717954 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9: Close
+[0m01:22:28.831439 [info ] [Thread-1 (]: 8 of 10 PASS not_null_rsi_SYMBOL ............................................... [[32mPASS[0m in 0.81s]
+[0m01:22:28.833097 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9
+[0m01:22:28.834279 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_volatility_DATE.2f6d552229
+[0m01:22:28.835482 [info ] [Thread-1 (]: 9 of 10 START test not_null_volatility_DATE .................................... [RUN]
+[0m01:22:28.837367 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_rsi_SYMBOL.559cef93b9, now test.lab2_group_10.not_null_volatility_DATE.2f6d552229)
+[0m01:22:28.838682 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_volatility_DATE.2f6d552229
+[0m01:22:28.844946 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_volatility_DATE.2f6d552229"
+[0m01:22:28.860673 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_volatility_DATE.2f6d552229
+[0m01:22:28.866509 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_volatility_DATE.2f6d552229"
+[0m01:22:28.881488 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_volatility_DATE.2f6d552229"
+[0m01:22:28.882489 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_volatility_DATE.2f6d552229: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_volatility_DATE.2f6d552229"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select DATE
+from USER_DB_MARMOT.analytics.volatility
+where DATE is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:28.883964 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:29.396069 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.512 seconds
+[0m01:22:29.399290 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_volatility_DATE.2f6d552229: Close
+[0m01:22:29.503988 [info ] [Thread-1 (]: 9 of 10 PASS not_null_volatility_DATE .......................................... [[32mPASS[0m in 0.67s]
+[0m01:22:29.505354 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_volatility_DATE.2f6d552229
+[0m01:22:29.506332 [debug] [Thread-1 (]: Began running node test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1
+[0m01:22:29.507171 [info ] [Thread-1 (]: 10 of 10 START test not_null_volatility_SYMBOL ................................. [RUN]
+[0m01:22:29.508526 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.lab2_group_10.not_null_volatility_DATE.2f6d552229, now test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1)
+[0m01:22:29.509704 [debug] [Thread-1 (]: Began compiling node test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1
+[0m01:22:29.515589 [debug] [Thread-1 (]: Writing injected SQL for node "test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1"
+[0m01:22:29.528352 [debug] [Thread-1 (]: Began executing node test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1
+[0m01:22:29.536888 [debug] [Thread-1 (]: Writing runtime sql for node "test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1"
+[0m01:22:29.550164 [debug] [Thread-1 (]: Using snowflake connection "test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1"
+[0m01:22:29.552134 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select SYMBOL
+from USER_DB_MARMOT.analytics.volatility
+where SYMBOL is null
+
+
+
+      
+    ) dbt_internal_test
+[0m01:22:29.553333 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:29.940846 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.387 seconds
+[0m01:22:29.944397 [debug] [Thread-1 (]: On test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1: Close
+[0m01:22:30.073369 [info ] [Thread-1 (]: 10 of 10 PASS not_null_volatility_SYMBOL ....................................... [[32mPASS[0m in 0.56s]
+[0m01:22:30.074887 [debug] [Thread-1 (]: Finished running node test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1
+[0m01:22:30.077883 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:22:30.078954 [debug] [MainThread]: Connection 'test.lab2_group_10.not_null_volatility_SYMBOL.555c643cc1' was properly closed.
+[0m01:22:30.080003 [info ] [MainThread]: 
+[0m01:22:30.080942 [info ] [MainThread]: Finished running 10 data tests in 0 hours 0 minutes and 8.65 seconds (8.65s).
+[0m01:22:30.084774 [debug] [MainThread]: Command end result
+[0m01:22:30.187059 [info ] [MainThread]: 
+[0m01:22:30.188751 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:22:30.190375 [info ] [MainThread]: 
+[0m01:22:30.191912 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[0m01:22:30.194974 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 11.720969, "process_user_time": 7.628953, "process_kernel_time": 1.325419, "process_mem_max_rss": "212640", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m01:22:30.196540 [debug] [MainThread]: Command `dbt test` succeeded at 01:22:30.196309 after 11.72 seconds
+[0m01:22:30.197554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf1f851fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf1fa78f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eaf4186a6f0>]}
+[0m01:22:30.198466 [debug] [MainThread]: Flushing usage events
+[0m01:22:37.525792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9eeca2900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9f10ef200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9f1658230>]}
+
+
+============================== 01:22:37.541127 | 5bf5d557-d2a9-402d-8afe-2e250d03d5f3 ==============================
+[0m01:22:37.541127 [info ] [MainThread]: Running with dbt=1.8.7
+[0m01:22:37.543096 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/opt/airflow/LAB2_Group_10', 'log_path': '/opt/airflow/LAB2_Group_10/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt snapshot --profiles-dir /opt/airflow/LAB2_Group_10 --project-dir /opt/airflow/LAB2_Group_10', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:22:39.188439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5bf5d557-d2a9-402d-8afe-2e250d03d5f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9eee9da90>]}
+[0m01:22:39.270894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5bf5d557-d2a9-402d-8afe-2e250d03d5f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9ee8a67e0>]}
+[0m01:22:39.272407 [info ] [MainThread]: Registered adapter: snowflake=1.8.4
+[0m01:22:39.497374 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m01:22:39.920665 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:22:39.921591 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:22:40.009117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5bf5d557-d2a9-402d-8afe-2e250d03d5f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9d0cc3050>]}
+[0m01:22:40.296599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5bf5d557-d2a9-402d-8afe-2e250d03d5f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9d09d63f0>]}
+[0m01:22:40.298812 [info ] [MainThread]: Found 1 snapshot, 5 models, 10 data tests, 459 macros
+[0m01:22:40.300604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5bf5d557-d2a9-402d-8afe-2e250d03d5f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9d09d6e40>]}
+[0m01:22:40.307437 [info ] [MainThread]: 
+[0m01:22:40.311102 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:22:40.316712 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_MARMOT'
+[0m01:22:40.366983 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT"
+[0m01:22:40.368533 [debug] [ThreadPool]: On list_USER_DB_MARMOT: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT"} */
+show terse schemas in database USER_DB_MARMOT
+    limit 10000
+[0m01:22:40.369914 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:22:41.241438 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.871 seconds
+[0m01:22:41.246225 [debug] [ThreadPool]: On list_USER_DB_MARMOT: Close
+[0m01:22:41.355669 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT, now create_USER_DB_MARMOT_snapshots)
+[0m01:22:41.357823 [debug] [ThreadPool]: Creating schema "database: "USER_DB_MARMOT"
+schema: "snapshots"
+"
+[0m01:22:41.367773 [debug] [ThreadPool]: Using snowflake connection "create_USER_DB_MARMOT_snapshots"
+[0m01:22:41.368812 [debug] [ThreadPool]: On create_USER_DB_MARMOT_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "create_USER_DB_MARMOT_snapshots"} */
+create schema if not exists USER_DB_MARMOT.snapshots
+[0m01:22:41.369703 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:22:41.802992 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.433 seconds
+[0m01:22:41.805034 [debug] [ThreadPool]: On create_USER_DB_MARMOT_snapshots: Close
+[0m01:22:41.945176 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_USER_DB_MARMOT_snapshots, now list_USER_DB_MARMOT_analytics)
+[0m01:22:41.962606 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_analytics"
+[0m01:22:41.963866 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_analytics"} */
+show objects in USER_DB_MARMOT.analytics limit 10000
+[0m01:22:41.964904 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:22:42.410196 [debug] [ThreadPool]: SQL status: SUCCESS 14 in 0.445 seconds
+[0m01:22:42.416332 [debug] [ThreadPool]: On list_USER_DB_MARMOT_analytics: Close
+[0m01:22:42.545687 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_analytics, now list_USER_DB_MARMOT_snapshots)
+[0m01:22:42.552659 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_MARMOT_snapshots"
+[0m01:22:42.553674 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "connection_name": "list_USER_DB_MARMOT_snapshots"} */
+show objects in USER_DB_MARMOT.snapshots limit 10000
+[0m01:22:42.554464 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:22:42.953186 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.399 seconds
+[0m01:22:42.956746 [debug] [ThreadPool]: On list_USER_DB_MARMOT_snapshots: Close
+[0m01:22:43.112363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5bf5d557-d2a9-402d-8afe-2e250d03d5f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9d09f9ca0>]}
+[0m01:22:43.113963 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:22:43.115177 [info ] [MainThread]: 
+[0m01:22:43.132621 [debug] [Thread-1 (]: Began running node snapshot.lab2_group_10.stock_snapshot
+[0m01:22:43.133941 [info ] [Thread-1 (]: 1 of 1 START snapshot snapshots.stock_snapshot ................................. [RUN]
+[0m01:22:43.135123 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_MARMOT_snapshots, now snapshot.lab2_group_10.stock_snapshot)
+[0m01:22:43.136117 [debug] [Thread-1 (]: Began compiling node snapshot.lab2_group_10.stock_snapshot
+[0m01:22:43.149655 [debug] [Thread-1 (]: Began executing node snapshot.lab2_group_10.stock_snapshot
+[0m01:22:43.307060 [debug] [Thread-1 (]: Using snowflake connection "snapshot.lab2_group_10.stock_snapshot"
+[0m01:22:43.308708 [debug] [Thread-1 (]: On snapshot.lab2_group_10.stock_snapshot: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "snapshot.lab2_group_10.stock_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "snapshot.lab2_group_10.stock_snapshot"} */
+select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(symbol || '-' || date::string as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+
+    from (
+        
+
+
+
+select
+    symbol,
+    date,
+    open,
+    high,
+    low,
+    close,
+    volume
+from USER_DB_MARMOT.analytics.raw_stocks_data
+
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m01:22:43.309884 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:22:43.811869 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.502 seconds
+[0m01:22:43.817392 [debug] [Thread-1 (]: Using snowflake connection "snapshot.lab2_group_10.stock_snapshot"
+[0m01:22:43.818451 [debug] [Thread-1 (]: On snapshot.lab2_group_10.stock_snapshot: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "snapshot.lab2_group_10.stock_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "snapshot.lab2_group_10.stock_snapshot"} */
+select * from (
+        select to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m01:22:43.903625 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.084 seconds
+[0m01:22:43.905543 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.lab2_group_10.stock_snapshot"
+[0m01:22:43.926649 [debug] [Thread-1 (]: Using snowflake connection "snapshot.lab2_group_10.stock_snapshot"
+[0m01:22:43.927959 [debug] [Thread-1 (]: On snapshot.lab2_group_10.stock_snapshot: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "lab2_group_10", "target_name": "dev", "node_id": "snapshot.lab2_group_10.stock_snapshot"} */
+create or replace transient table USER_DB_MARMOT.snapshots.stock_snapshot
+         as
+        (
+    
+
+    select *,
+        md5(coalesce(cast(symbol || '-' || date::string as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+
+    from (
+        
+
+
+
+select
+    symbol,
+    date,
+    open,
+    high,
+    low,
+    close,
+    volume
+from USER_DB_MARMOT.analytics.raw_stocks_data
+
+    ) sbq
+
+
+
+        );
+[0m01:22:44.671386 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.742 seconds
+[0m01:22:44.701923 [debug] [Thread-1 (]: On snapshot.lab2_group_10.stock_snapshot: Close
+[0m01:22:44.820593 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5bf5d557-d2a9-402d-8afe-2e250d03d5f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9ef47d430>]}
+[0m01:22:44.822102 [info ] [Thread-1 (]: 1 of 1 OK snapshotted snapshots.stock_snapshot ................................. [[32mSUCCESS 1[0m in 1.68s]
+[0m01:22:44.823389 [debug] [Thread-1 (]: Finished running node snapshot.lab2_group_10.stock_snapshot
+[0m01:22:44.826015 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:22:44.826880 [debug] [MainThread]: Connection 'snapshot.lab2_group_10.stock_snapshot' was properly closed.
+[0m01:22:44.827596 [info ] [MainThread]: 
+[0m01:22:44.828304 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 4.52 seconds (4.52s).
+[0m01:22:44.829539 [debug] [MainThread]: Command end result
+[0m01:22:44.921889 [info ] [MainThread]: 
+[0m01:22:44.923443 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:22:44.925610 [info ] [MainThread]: 
+[0m01:22:44.926870 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m01:22:44.928879 [debug] [MainThread]: Resource report: {"command_name": "snapshot", "command_success": true, "command_wall_clock_time": 7.532174, "process_user_time": 7.603773, "process_kernel_time": 1.50457, "process_mem_max_rss": "211460", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m01:22:44.930018 [debug] [MainThread]: Command `dbt snapshot` succeeded at 01:22:44.929822 after 7.53 seconds
+[0m01:22:44.930936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9eee35ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9ef05dd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b9d1bdb020>]}
+[0m01:22:44.931949 [debug] [MainThread]: Flushing usage events
